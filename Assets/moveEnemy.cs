@@ -20,7 +20,7 @@ public class moveEnemy : MonoBehaviour
     }
 
     void collide() {
-        if (transform.position.x < perso.transform.position.x + 0.5f && transform.position.x > perso.transform.position.x - 0.5f && transform.position.y < perso.transform.position.y + 0.5f && transform.position.y > perso.transform.position.y - 0.5f) {
+        if (transform.position.x < perso.transform.position.x + 1.2f && transform.position.x > perso.transform.position.x - 1.2f && transform.position.y < perso.transform.position.y + 1.2f && transform.position.y > perso.transform.position.y - 1.2f) {
             SceneManager.LoadScene("GameOver");
         }
     }
