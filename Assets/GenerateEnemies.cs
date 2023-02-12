@@ -5,6 +5,7 @@ using UnityEngine;
 public class GenerateEnemies : MonoBehaviour
 {
     [SerializeField] private GameObject enemy;
+    public float speed = 0.08f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,7 @@ public class GenerateEnemies : MonoBehaviour
 
     // Update is called once per frame
     void GenerateGrid() {
-        for (int x = 0; x < 1000; x += 10) {
+        for (int x = 10; x < 1000; x += 10) {
             int i = Random.Range(0,5);
             int[] array = {-4, -2, 0, 2, 4};
             for (; i > 0; i--) {
